@@ -1,0 +1,129 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #ff7abf; /* Tom de rosa suave */
+    color: white;
+    padding: 40px;
+    border-bottom: 2px solid #ff4d99;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Seção de mensagem */
+#mensagem {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: #555;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagens */
+#imagens {
+    padding: 40px 20px;
+}
+
+.imagem {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Vídeo */
+#video {
+    padding: 20px;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+video:hover {
+    transform: scale(1.05);
+}
+
+/* Contagem Regressiva */
+#contagem-regressiva {
+    background-color: #ffb6d6;
+    padding: 50px 20px;
+    color: #e6007e;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #ff7abf;
+}
+
+/* Animação suave para a transição de elementos */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Aplicando a animação aos elementos principais */
+header, #mensagem, #imagens, #video, #contagem-regressiva {
+    animation: fadeIn 1s ease-out;
+}
